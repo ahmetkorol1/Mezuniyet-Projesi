@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gorevli Kayit</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Gorevli Ekle</h1>
+          </div>
+          <div class="panel-body">
+            <form action="Staff.php" method="post">
+              <div class="form-group">
+                <label for="S_ID">Gorevli No</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="S_ID"
+                  name="S_ID"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Name">Isim Soyisim</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Name"
+                  name="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Address">Adres</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Address"
+                  name="Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Email">E-mail</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                  name="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Designation">Gorev Yeri</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Designation"
+                  name="Designation"
+                  required
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" value="Gonder" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <button><a href="DispStaff.php" class="btn btn-primary"><b>Geri</b></a></button>
+            <small>&copy; KIBRIS YURDUM</small>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>

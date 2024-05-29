@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Page</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h1>Ogrenci Ekle</h1>
+        </div>
+        <div class="panel-body">
+            <form action="student.php" method="post">
+                <div class="form-group">
+                    <label for="Stu_id">Ogrenci No</label>
+                    <input type="number" class="form-control" id="Stu_id" name="Stu_id" required />
+                </div>
+                <div class="form-group">
+                    <label for="Name">Isim Soyisim</label>
+                    <input type="text" class="form-control" id="Name" name="Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="Department">Bolum</label>
+                    <input type="text" class="form-control" id="Department" name="Department" required />
+                </div>
+                <div class="form-group">
+                    <label for="Session">Donem</label>
+                    <input type="Year" class="form-control" id="Session" name="Session" required />
+                </div>
+                <div class="form-group">
+                    <label for="hall">Yurt</label>
+                </div>
+                <div class="form-group">
+                    <select id="hall" name="hall" class="form-control">
+                        <option>Akdeniz Yurdu</option>
+                        <option>Astra Yurdu</option>
+                        <option>Dau 2 Yurdu</option>
+                        <option>Longson Yurdu</option>
+                        <option>Popart Yurdu</option>
+                        <option>Dau 4 Yurdu</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="Room_Number">Oda No</label>
+                    <input type="number" class="form-control" id="Room_Number" name="Room_Number" required />
+                </div>
+                <input type="submit" class="btn btn-primary" value="Gonder" />
+                <!-- <button> <a href="DispStudent.php" class="btn btn-success"><b>Submit</b></a></button> -->
+            </form>
+        </div>
+        <div class="panel-footer text-right">
+          <button><a href="DispStudent.php" class="btn btn-primary"><b>Geri</b></a></button>
+          <small>&copy; KIBRIS YURDUM</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
